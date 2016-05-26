@@ -5,6 +5,7 @@ Adds async methods for seneca.
 ### Methods
 
 `addAsync(def, generator)` - uses `co` to handle the generator function.
+
 `actAsync(def)` - uses `bluebird.promisify`, returns a promise.
 
 ### Usage
