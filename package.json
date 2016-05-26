@@ -1,0 +1,30 @@
+{
+  "name": "seneca-asyncify",
+  "version": "1.0.0",
+  "description": "Async methods for Seneca",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fixate/asyncify-seneca.git"
+  },
+  "keywords": [
+    "seneca",
+    "async"
+  ],
+  "author": "Stan Bondi",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fixate/asyncify-seneca/issues"
+  },
+  "homepage": "https://github.com/fixate/asyncify-seneca#readme",
+  "dependencies": {
+    "bluebird": "^3.4.0",
+    "co": "^4.6.0"
+  },
+  "peerDependencies": {
+    "seneca": "*"
+  }
+}
