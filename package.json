@@ -1,6 +1,6 @@
 {
   "name": "seneca-asyncify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Async methods for Seneca",
   "main": "index.js",
   "scripts": {
