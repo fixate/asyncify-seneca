@@ -8,7 +8,11 @@ function asyncifySeneca(seneca) {
   seneca.actAsync = Promise.promisify(seneca.act, { context: seneca });
   seneca.addAsync = function addAsync(props, func) {
     seneca.add(props, (args, done) => {
-      co.wrap(func)(args).then((r) => done(null, r)).catch(done);
+      co.wrap(func)(args)
+        .then((r) => {
+          done(null, r)
+          return null;
+        }).catch(done);
     })
   };
   return seneca;
